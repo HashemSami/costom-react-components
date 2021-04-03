@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container div {
+  box-sizing: border-box;
+  width: 220px;
+  height: 250px;
+  padding: 10px;
+  border: 1px dashed skyblue;
+
+  margin: 20px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.progress {
+  fill: none;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.progress-text {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.progress-red {
+  stroke: #ff2400;
+}
+
+.progress-text-red {
+  fill: #ff2400;
+}
+
+.progress-blue {
+  stroke: #42c0fb;
+}
+
+.progress-text-blue {
+  fill: #42c0fb;
+}
+
+.progress-green {
+  stroke: #03a873;
+}
+
+.progress-text-green {
+  fill: #03a873;
+}
