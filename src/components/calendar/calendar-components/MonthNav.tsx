@@ -13,7 +13,7 @@ const MonthNav: FC<MonthNavProps> = ({ dayjsContext, setDayjsContext }) => {
   const [showMonthPopup, setShowMonthPopup] = useState(false);
 
   // const [dayjsContext, _] = useState(dayjs()); //to navigate between months and years
-  console.log(showMonthPopup);
+  // console.log(showMonthPopup);
 
   const month = getMonth(dayjsContext);
 

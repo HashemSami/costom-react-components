@@ -25,7 +25,7 @@ export const CalendarDays: FC<CalendarDaysProps> = ({ totalSlots }) => {
       rows.push(insertRow);
     }
   });
-  console.log(rows);
+  // console.log(rows);
   return (
     <Fragment>
       {rows.map((row, i) => (

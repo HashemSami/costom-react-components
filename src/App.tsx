@@ -4,6 +4,7 @@ import "./App.css";
 import StarRating from "./components/star-rating/StarRating.component";
 import ProgressBarContainer from "./components/circular-progress-bar";
 import Calendar from "./components/calendar";
+import DragDrop from "./components/drag-drop/DragDrop";
 
 const style = {
   position: "relative",
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <DragDrop />
       <Calendar style={style} width="350px" />
       <div>
         <StarRating

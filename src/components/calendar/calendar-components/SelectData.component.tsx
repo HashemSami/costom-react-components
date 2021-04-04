@@ -8,7 +8,7 @@ interface SelectDataProps {
 
 const SelectData: FC<SelectDataProps> = ({ months, setDayjsContext }) => {
   const onSelectChange = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    e: React.FormEvent<HTMLAnchorElement>,
     month: string
   ) => {
     const monthNumber = months.indexOf(month);
@@ -17,7 +17,7 @@ const SelectData: FC<SelectDataProps> = ({ months, setDayjsContext }) => {
 
   const popup = months.map((month) => (
     <div key={month}>
-      <a href="#" onClick={(e) => onSelectChange(e, month)}>
+      <a href="#" onChange={(e) => onSelectChange(e, month)}>
         {month}
       </a>
     </div>

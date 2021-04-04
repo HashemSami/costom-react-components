@@ -24,7 +24,7 @@ const YearNav: FC<YearNavProps> = ({ year, setDayjsContext }) => {
     }
   };
 
-  console.log(year);
+  // console.log(year);
   return showYearEditor ? (
     <input
       defaultValue={year}
